@@ -1,0 +1,100 @@
+/* ----------------- Fonts Apply ----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* --------- Top Section Start --------- */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-section{
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+}
+.top-part{
+    display: flex;
+    justify-content: space-between;
+}
+.top-text{
+    margin-left: 156px;
+    margin-top: 207px;
+    margin-bottom: 27px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.watch-button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    margin-left: 156px;
+}
+.watch-button a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.fa-arrow-right{
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+.game img{
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+    margin-right: 140px;
+    margin-bottom: 85px;
+}
+/* --------- Top Section END --------- */
+
+/* Middle Section Part Start */
+.middle-section{
+    width: 1440px;
+    height: 3750px;
+    background-color: #FFFFFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-img img{
+    width: 300px;
+    height: 256px;
+    padding: 15px;
+    border-radius: 20px;
+}
+.info{
+    width: 300px;
+    height: 154px;
+    color: #18191F;
+    padding: 15px;
+    padding-top: 0;
+}
+.info-text{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+.info p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
