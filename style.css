@@ -186,18 +186,28 @@ body{
 /* --------- MDIA QUERIES --------- */
 /* --------- Responsive for Mobile Devices --------- */
 @media only screen and (max-width: 688px) {
-    .container{
+    .container, .top-section{
         width: 100%;
-     
     }
     .top-part{
-        background-color: indianred;
         flex-direction: column;
-        align-items: center;
     }
     .players{
-        background-color: lightblue;
-        
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
 
+/* Tablet Devices */
+
+
+/* Tablet Devices */
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+    .container, .top-section{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
