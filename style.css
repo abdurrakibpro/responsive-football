@@ -5,7 +5,7 @@ body{
     margin: 0;
 }
 
-/* --------- Top Section Start --------- */
+/* --------- Top Section START --------- */
 .container{
     display: flex;
     flex-direction: column;
@@ -34,8 +34,9 @@ body{
     height: 44px;
     padding: 10px 24px;
     margin-left: 156px;
+    border: none;
 }
-.watch-button a{
+.watch-button a, .match-button a{
     text-decoration: none;
     font-size: 16px;
     color: #FFFFFF;
@@ -53,13 +54,20 @@ body{
     margin-top: 153px;
     margin-right: 140px;
     margin-bottom: 85px;
+    transition: width 2s, height 2s, transform 2s;
+}
+.game img:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(90deg);
 }
 /* --------- Top Section END --------- */
 
-/* Middle Section Part Start */
-.middle-section{
+
+/*-------- Middle Section Part Start --------- */
+.middle-section-player{
     width: 1440px;
-    height: 3750px;
+    height: 3200px;
     background-color: #FFFFFF;
 }
 .players{
@@ -69,7 +77,6 @@ body{
     margin-left: 180px;
     margin-right: 180px;
     margin-top: 70px;
-    
 }
 .player{
     width: 330px;
@@ -94,7 +101,103 @@ body{
     font-size: 28px;
     font-weight: 700;
 }
-.info p{
+.info p, .match-left p{
     font-size: 16px;
     color: #6C6C6C;
+}
+/*-------- Middle Section Part END --------- */
+
+
+/* --------- BOTTOM SECTION START --------- */
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.match-left{
+    width: 467px;
+    height: 309px;
+    margin-left: 182px;
+    margin-top: 224px;
+}
+.match-right{
+    width: 567px;
+    height: 427px;
+    margin-top: 156px;
+    margin-right: 165px;
+}
+.match-text{
+    font-size: 48px;
+    font-weight:  700;
+    color: #0A0826;
+    margin: 0;
+}
+.match-button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    border: none;
+}
+.match-right img{
+    width: 567px;
+    height: 427px;
+}
+/* --------- BOTTOM SECTION END --------- */
+
+
+/* --------- FOOTER START --------- */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 158px;
+}
+.footballs{
+    width: 484px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon{
+    width: 170px;
+    height: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 14px;
+    justify-items: center;
+    align-content: center;
+    margin: 20px 0px;
+}
+#color{
+    font-size: 25px;
+    color: grey;
+}
+.football img{
+    width: 484px;
+    height: 110px;
+}
+.foot-text{
+    font-size: 18px;
+    color: #000000;
+}
+/* --------- FOOTER END --------- */
+
+/* --------- MDIA QUERIES --------- */
+/* --------- Responsive for Mobile Devices --------- */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+     
+    }
+    .top-part{
+        background-color: indianred;
+        flex-direction: column;
+        align-items: center;
+    }
+    .players{
+        background-color: lightblue;
+        
+
+    }
 }
